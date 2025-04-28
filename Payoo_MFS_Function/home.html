@@ -24,14 +24,32 @@
                     </div>
                   </div>
                   <div class="divider"></div>
-                <!-- Features -->
+                <!-- Features Start-->
+                <div>
+                  <button class="btn btn-lg">Add Money</button>
+                <button class="btn btn-lg">Cash Out</button>
+                </div>
+                 <!-- Features End -->
+                  <div class="divider"></div>
+                  <!-- add money form Start-- -->
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <label class="label">Amount</label>
+                        <input type="text" class="input" placeholder="Enter Your Amount" />
+                        <label class="label">Password</label>
+                        <input type="password" class="input" placeholder="PIN Number" autocomplete="off" />
+                        <button id="btn_add_money" class="btn btn-neutral mt-4">Add Money</button>
+                    </div>
+                  </div>
+                  <!-- add money form End-- -->
               </div>
             </div>
           </div>
 
     </main>
 
-
+<!-- JS File -->
+ <script src="js/utilities.js"></script>
     <script src="js/add_money.js"></script>
 </body>
 </html>
