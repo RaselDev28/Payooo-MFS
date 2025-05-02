@@ -4,5 +4,11 @@ document.getElementById("btn_add_money").addEventListener("click", function (eve
     
 const addMoney=getInputFieldValueById('input-add-money');
 const pinNumber=getInputFieldValueById('input-pin-number');
-console.log("Add Money is :", addMoney, pinNumber);
+
+if(pinNumber === 1234){
+
+}
+else{
+    alert("Wrong Credential")
+}
 })
