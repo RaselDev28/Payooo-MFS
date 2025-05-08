@@ -21,5 +21,10 @@ function getTextFieldValueById(id) {
 }
 
 function showSectionbyId(id){
-    
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('Transection-section').classList.add('hidden');
+
+    // Show the section 
+    document.getElementById(id).classList.remove('hidden');
 }

@@ -29,13 +29,13 @@
           <!-- Features Start-->
           <div class="">
             <button id="show-add-money-btn" class="btn btn-lg">Add Money</button>
-            <button class="btn btn-lg">Cash Out</button>
-            <button class="btn btn-lg">Transactions</button>
+            <button id="show-cash-out-btn" class="btn btn-lg">Cash Out</button>
+            <button id="show-transection-history" class="btn btn-lg">Transactions</button>
           </div>
           <!-- Features End -->
           <div class="divider"></div>
           <!-- add money form Start-- -->
-          <div id="add-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
               <label class="label">Amount</label>
               <input id="input-add-money" type="text" class="input" placeholder="Enter Your Amount" />
@@ -47,7 +47,7 @@
           <!-- add money form End-- -->
 
           <!-- Cash Out start Form Start -->
-          <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
               <label class="label">Cash Out Amount</label>
               <input id="input-cash-out" type="text" class="input" placeholder="Enter Your Amount" />
@@ -60,8 +60,11 @@
           <!-- Cash Out start Form End -->
 
           <!-- Transection History Start -->
-          <div id="Transection-section">
-            <h2 class="text-4xl text-center">Transactions History</h2>
+          <div id="Transection-section" class="hidden ">
+            <h2 class="text-3xl text-center">Transactions History</h2>
+            <div class="transection-container">
+              
+            </div>
           </div>
           <!-- Transection History End -->
         </div>
