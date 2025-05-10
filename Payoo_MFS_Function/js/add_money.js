@@ -5,6 +5,11 @@ document.getElementById("btn_add_money").addEventListener("click", function (eve
     const addMoney = getInputFieldValueById('input-add-money');
     const pinNumber = getInputFieldValueById('input-pin-number');
 
+    if(isNaN(addMoney)){
+        alert('Not a Number');
+        return;
+    }
+
     if (pinNumber === 1234) {
         const balence = getTextFieldValueById("account-balence");
         const newBalence = balence + addMoney;
